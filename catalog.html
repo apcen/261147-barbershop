@@ -8,15 +8,17 @@
     <header class="main-header">
       <div class="container">
         <figure class="logo">
-          <img src="http://placehold.it/150x100">
+          <img src="http://placehold.it/150x100" alt="Logo">
         </figure>
-        <ul class="main-nav">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a class="active" href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a class="active">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
         <div class="user-block">
           <a href="#">Вход</a>
         </div>
@@ -29,12 +31,12 @@
         <ul class="breadcrumbs">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Магазин</a></li>
-          <li><a class="active" href="#">Средства для ухода</a></li>
+          <li><a class="active">Средства для ухода</a></li>
         </ul>
 
-        <section class="manufacturers">
-          <h2>Производители:</h2>
-          <form action="#" method="post">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Производители:</legend>
             <label>
               <input type="checkbox" name="baxter-of-california" checked>
               Baxter of California
@@ -64,12 +66,10 @@
               <input type="checkbox" name="american-crew" checked>
               American Crew
             </label>
-          </form>
-        </section>
+          </fieldset>
 
-        <section class="product-group">
-          <h2>Группы товаров:</h2>
-          <form action="#" method="post">
+          <fieldset>
+            <legend>Группы товаров:</legend>
             <label>
               <input type="radio" name="product" value="shaving-accessories">
               Бритвенные принадлежности
@@ -84,14 +84,14 @@
               <input type="radio" name="product" value="accessories">
               Аксессуары
             </label>
-          </form>
-          <a class="btn" href="#">Показать</a>
-        </section>
+          </fieldset>
+          <button class="btn" name="show">Показать</button>
+        </form>
 
         <section class="catalog">
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Набор для путешествий Baxter of California">
             </figure>
             <h3 class="title">
               Набор для путешествий<br>
@@ -103,7 +103,7 @@
 
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер Baxter of California">
             </figure>
             <h3 class="title">
               Увлажняющий кондиционер<br>
@@ -115,7 +115,7 @@
 
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Гель для волос Suavetico">
             </figure>
             <h3 class="title">
               Гель для волос<br>
@@ -127,7 +127,7 @@
 
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Глина для укладки волос American Crew">
             </figure>
             <h3 class="title">
               Глина для укладки волос<br>
@@ -139,7 +139,7 @@
 
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Гель для волос American Crew">
             </figure>
             <h3 class="title">
               Гель для волос<br>
@@ -151,7 +151,7 @@
 
           <article class="catalog-item">
             <figure class="pic">
-              <img src="http://placehold.it/150x100">
+              <img src="http://placehold.it/150x100" alt="Набор для бритья Baxter of California">
             </figure>
             <h3 class="title">
               Набор для бритья<br>
@@ -164,7 +164,7 @@
 
         <div class="catalog-pages">
           <a class="btn" href="#">1</a>
-          <a class="btn active" href="#">2</a>
+          <a class="btn active">2</a>
           <a class="btn" href="#">3</a>
           <a class="btn" href="#">4</a>
         </div>
@@ -177,19 +177,19 @@
           Барбершоп "Бородинский"<br>
           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (495) 666-02-66
+          Телефон: <a href="#">+7 (495) 666-02-66</a>
         </section>
 
         <section class="social">
           <p>Давайте дружить!</p>
-          <a class="social-btn vk" href="#">Вконтакте</a>
-          <a class="social-btn fb" href="#">Фейсбук</a>
-          <a class="social-btn inst" href="#">Инстаграм</a>
+          <a class="social-btn vk" href="#" target="_blank">Вконтакте</a>
+          <a class="social-btn fb" href="#" target="_blank">Фейсбук</a>
+          <a class="social-btn inst" href="#" target="_blank">Инстаграм</a>
         </section>
 
         <section class="copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
         </section>
       </div>
     </footer>
