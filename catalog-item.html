@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <figure class="logo">
           <img src="img/nav-logo.png" width="111" height="24" alt="Logo">
         </figure>
@@ -26,14 +27,16 @@
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="title">Набор для путешествий "Baxter of California"</h1>
-        <ul class="breadcrumbs">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Средства для ухода</a></li>
-          <li><a class="active">Набор для путешествий "Baxter of California"</a></li>
-        </ul>
+      <div class="container clearfix">
+        <section class="item-header">
+          <h1 class="title">Набор для путешествий "Baxter of California"</h1>
+          <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Средства для ухода</a></li>
+            <li><a class="active">Набор для путешествий "Baxter of California"</a></li>
+          </ul>
+        </section>
 
         <section class="gallery">
           <figure class="gallery-item">
@@ -50,34 +53,39 @@
           </figure>
         </section>
 
-        <section class="description">
-          Есть в наличии
-          <span class="vendor-code">Артикул: Dexter-AE</span>
-          <p>Travel Kit - необходимый аксессуар во время любого
-          путешествия. В аккуратной кожаной сумке находится все, что
-          нужно для бритья и ухода за кожей во время рабочей поездки
-          или отдыха: средство для умывания, увлажняющий крем, крем
-          для бритья, крем после брить, шампун, набор также может
-          стать отличным подарком.</p>
-        </section>
+        <div class="content-right">
+          <section class="description">
+            <span class="availability">Есть в наличии</span>
+            <span class="vendor-code">Артикул: Dexter-AE</span>
+            <p>Travel Kit - необходимый аксессуар во время любого
+            путешествия. В аккуратной кожаной сумке находится все, что
+            нужно для бритья и ухода за кожей во время рабочей поездки
+            или отдыха: средство для умывания, увлажняющий крем, крем
+            для бритья, крем после брить, шампун, набор также может
+            стать отличным подарком.</p>
+          </section>
 
-        <div class="price">2900 руб.</div>
+          <div class="item-price-block">
+            <span class="price">2900 руб.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
 
-        <section class="kit">
-          <h2>В набор входят:</h2>
-          <ul>
-            <li>Средство для умывания (50 мл)</li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-          </ul>
-        </section>
+          <section class="kit">
+            <h2>В набор входят:</h2>
+            <ul>
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="contacts">
           Барбершоп "Бородинский"<br>
           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
